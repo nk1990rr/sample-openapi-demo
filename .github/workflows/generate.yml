@@ -23,7 +23,7 @@ jobs:
         run: npm install @openapitools/openapi-generator-cli
 
       - name: Generate API Client
-        run: npx @openapitools/openapi-generator-cli generate -i resources/minimal.yml -g python -o generated
+        run: npx @openapitools/openapi-generator-cli generate -i resources/minimal.yml -g java -o generated
       
       - name: Upload generated files
         uses: actions/upload-artifact@v4
